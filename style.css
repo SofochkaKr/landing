@@ -1,0 +1,148 @@
+/*body {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 1920px;
+    height: 900px;
+}
+
+
+
+.header-body{
+    background: url("img-first/Rectangle.png"),  no-repeat;
+    width: 1920px;
+    height: 900px;
+}
+
+nav {
+    width: 580px;
+    height: 60px;
+    padding: 40px 400px 800px 930px;
+}
+
+ul.menu-header-list {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+
+}
+li {
+    list-style-type: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+a .menu-header-link {
+    padding: 0 20px 40px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 1920px;
+    height: 900px;
+}
+
+.container {
+    background: url("img-first/Rectangle.png"),  no-repeat;
+    width: 1920px;
+    height: 900px;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap; /*перенос строки */
+    justify-content: space-between; /*прижимает содержимое к краям */
+    align-items: flex-end; /*выравнивает элементы по центру на вертикальной */
+}
+
+.menu {
+    width: 580px;
+    height: 60px;
+    margin: 40px 400px 220px 930px;
+}
+
+.header .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .menu ul li {
+    margin: 20px 10px;
+}
+
+.header .menu ul a {
+    text-decoration: none;
+
+    color: #FFF;
+    padding: 0 10px 40px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.name {
+    display: flex;
+    flex-direction: column;
+
+}
+.title-cite {
+    width: 175px;
+    height: 20px;
+    margin: 0 870px 20px 870px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.more-info {
+    width: 830px;
+    height: 110px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 540px 0 540px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.btn{
+    margin: 50px 860px 50px 860px;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    border: #4985FF;
+    background-color:  #4985FF;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
