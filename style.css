@@ -133,7 +133,6 @@ body {
   text-align: center;
   font-size: var(--sm-size);
   margin: 0 590px 70px 590px;
-  font-style: normal;
 }
 
 .our-opportunities {
@@ -233,7 +232,7 @@ body {
   height: 15px;
   color: #999;
   font-size: var(--sm-size);
-  font-weight:var(--sm-weight);
+  font-weight: var(--sm-weight);
   line-height: 158.47%;
 }
 
@@ -377,7 +376,6 @@ body {
 .image-projects img:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .video {
   background: url("img-first/5.png"), no-repeat;
@@ -583,4 +581,127 @@ footer img {
   line-height: 158.47%;
   margin: 30px 765px;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    width: 576px;
+  }
+  .header-container {
+    width: 576px;
+  }
+  .header {
+    align-items: center;
+  }
+
+  .header-menu {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+    padding: 10px;
+  }
+  .menu {
+    margin: auto;
+    width: auto;
+  }
+
+  .header .menu ul li {
+    margin: 10px;
+  }
+  .title-cite {
+    margin: auto;
+  }
+  .more-info {
+    width: auto;
+    margin: 20px 100px;
+    font-size: 24px;
+  }
+  .btn {
+    margin: 50px 185px;
+    width: 200px;
+    height: 45px;
+  }
+
+  .services {
+    width: 576px;
+    height: auto;
+  }
+  .main-title {
+    width: 350px;
+    font-size: var(--md-size);
+    margin: 110px 100px 20px 100px;
+  }
+  .secondary-info {
+    width: 400px;
+    height: 40px;
+    margin: 0 88px 90px 88px;
+  }
+  .our-opportunities {
+    width: 576px;
+    height: 230px;
+  }
+  .services__item {
+    margin: 10px;
+    width: 190px;
+    height: 240px;
+  }
+  .services__item img {
+    width: 40px;
+    height: 40px;
+  }
+  .services__item h4 {
+    margin: 15px 10px 30px 15px;
+    width: 100px;
+    height: 16px;
+    font-size: var(--sm-size);
+  }
+  .explanation {
+    font-weight: var(--sm-weight);
+    margin-left: var(--md-size);
+    width: 100px;
+    height: 58px;
+  }
+
+  .item1 {
+    margin-left: 10px;
+  }
+  .about-us {
+    margin-top: 60px;
+    overflow: hidden;
+  }
+
+  .about-us__text h2 {
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    margin: 90px 80px 0 40px;
+  }
+  .high-standard {
+    width: 250px;
+    height: 200px;
+    margin: 0 30px 10px 300px;
+    font-size: 14px;
+  }
+  .about-us__text a {
+    margin: 30px 70px 30px 300px;
+  }
+  .image-service {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+  }
+  .image-service img {
+    width: 250px;
+    height: 150px;
+    margin: 60px 250px 0 20px;
+  }
+
+  .col-sm-2 {
+    width: 576px;
+    height: 100%;
+  }
+  .about-us hr {
+    width: 300px;
+    margin: 0 100px;
+  }
 }
