@@ -2,28 +2,30 @@
 <html lang="ru">
   <head>
     <title>Передовая IT студия</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
-    <div class="container">
+    <div class="header-container">
       <div class="first-list">
         <div class="header">
           <div class="header-menu">
             <nav class="menu">
               <ul class="menu-header-list">
-                <li><a href="#" class="menu-header-link">Главная</a></li>
-                <li><a href="#" class="menu-header-link">Наши проекты</a></li>
-                <li><a href="#" class="menu-header-link">Услуги</a></li>
-                <li><a href="#" class="menu-header-link">Новости</a></li>
-                <li><a href="#" class="menu-header-link"> Контакты</a></li>
+                <li><a href="#primary" class="menu-header-link">Главная</a></li>
+                <li><a href="#projects" class="menu-header-link">Наши проекты</a></li>
+                <li><a href="#services" class="menu-header-link">Услуги</a></li>
+                <li><a href="#news" class="menu-header-link">Новости</a></li>
+                <li><a href="#contacts" class="menu-header-link"> Контакты</a></li>
               </ul>
             </nav>
           </div>
         </div>
 
-        <div class="name">
+        <div class="name" id="primary">
           <div class="title-cite"><span>Передовая IT студия</span></div>
 
           <div class="more-info">
@@ -37,7 +39,7 @@
       </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <div class="main-title">
         Мы создаем мобильные приложения для крупных корпораций
       </div>
@@ -107,7 +109,7 @@
         </div>
       </div>
       <hr />
-
+<!--
       <div class="about_us__numbers">
         <div class="numbers">
           <div class="numbers-one">
@@ -138,7 +140,7 @@
         </div>
         <div class="numbers">
           <div class="numbers-one">
-            <img src="img-first/web-programming.png" />
+            <img src="img-first/web-programming.png" alt=""/>
             <h2 class="our-numbers">125</h2>
           </div>
           <div class="numb">
@@ -156,8 +158,69 @@
         </div>
       </div>
     </div>
+-->
 
-    <div class="all-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <div>
+              <img src="img-first/web-programming.png" />
+            <h2 class="our-numbers">125</h2>
+              </div>
+            <div>
+            <p>Our projects</p>
+              </div>
+          </div>
+          <div class="col-2">
+            <div>
+            <img src="img-first/web-programming.png" />
+            <h2 class="our-numbers">125</h2>
+              </div>
+            <div>
+            <p>Our projects</p>
+              </div>
+          </div>
+          <div class="col-2">
+            <div>
+            <img src="img-first/web-programming.png" />
+            <h2 class="our-numbers">125</h2>
+              </div>
+            <div>
+            <p>Our projects</p>
+              </div>
+          </div>
+          <div class="col-2">
+            <div>
+            <img src="img-first/web-programming.png" />
+            <h2 class="our-numbers">125</h2>
+              </div>
+            <div>
+            <p>Our projects</p>
+              </div>
+          </div>
+          <div class="col-2">
+            <div>
+            <img src="img-first/web-programming.png" />
+            <h2 class="our-numbers">125</h2>
+              </div>
+            <div>
+            <p>Our projects</p>
+              </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="all-services" id="projects">
       <div class="first-line-service">
         <h2 class="first-line-our">
           Наши работы, на которых мы специализируемся
@@ -166,6 +229,7 @@
           <button class="btn__item">Все услуги</button>
         </div>
       </div>
+
 
       <div class="all-services__item">
         <div class="item">
@@ -199,9 +263,10 @@
           <a href="#">Подробнее</a>
         </div>
       </div>
+      <hr />
     </div>
 
-    <hr />
+
 
     <div class="all-projects">
       <h2>Наши проекты</h2>
@@ -221,7 +286,7 @@
       </div>
     </div>
 
-    <div class="video">
+    <div class="video" id="news">
       <h2>Видео о нашей работе</h2>
       <p>Просто посмотрите, как мы работаем</p>
       <div class="video-info">
@@ -232,27 +297,184 @@
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen<
+          allowfullscreen
         ></iframe>
-        <button>
-          <img src="img-first/play-button(1).png" /><span>Смотреть видео</span>
-        </button>
+
       </div>
       <hr />
     </div>
 
     <div class="subscribe">
       <h3>Подпишитесь на нашу рассылку</h3>
-      <p>Полезные статьи, акции, новости - получите все это сейчас!</p>
+      <p class="sub--1"> Полезные статьи, акции, новости - получите все это сейчас!</p>
       <form action="#" method="GET">
         <input type="email" name="email" value="Ваш e-mail" />
         <button type="button">Подписаться</button>
       </form>
-      <p>Мы не шлем спам, и передаем никому ваши данные.</p>
+      <p class="sub--2">Мы не шлем спам, и передаем никому ваши данные.</p>
     </div>
 
-    <footer>
-      <div class="footer__links">
+
+
+
+      <footer>
+      <div class="container">
+        <div class="row first">
+
+          <div class="col-3">
+            <h3>Контактная информация</h3>
+          </div>
+          <div class="col-3">
+            <h3>Основные ссылки</h3>
+          </div>
+          <div class="col-3">
+            <h3>Наши проекты</h3>
+          </div>
+          <div class="col-3">
+            <h3>Социальные сети</h3>
+          </div>
+
+
+        </div>
+
+        <div class="row second">
+
+          <div class="col-3">
+            <div>
+              <img src="img-first/envelope.png"  alt=""/>
+              <p>test@test.ru</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div>
+              <img src="img-first/right-arrow.png" />
+              <p>Главная</p>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div>
+            <img src="img-first/right-arrow.png" />
+            <p>РосНано</p>
+              </div>
+          </div>
+          <div class="col-3">
+            <div><img src="img-first/right-arrow.png" />
+              <p>VK.com</p></div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-3">
+              <div>
+                <img src="img-first/Group(2).png" />
+                <p>+8 777 555 66 99</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+                <img src="img-first/right-arrow.png" />
+                <p>Наши проекты</p>
+              </div>
+
+            </div>
+            <div class="col-3">
+              <div>
+                <img src="img-first/right-arrow.png" />
+                <p>Сколково</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <img src="img-first/right-arrow.png" />
+              <p>Instagram</p>
+            </div>
+
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-3">
+              <div>
+                <img src="img-first/placeholder.png" />
+                <p>Москва, Бульвар Ленина 33</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+                <img src="img-first/right-arrow.png" />
+                <p>Наши услуги</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+                <img src="img-first/right-arrow.png" />
+                <p>Проект “Восток”</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <img src="img-first/right-arrow.png" />
+              <p>Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+                <img src="img-first/right-arrow.png" />
+                <p>Контакты</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+                <img src="img-first/right-arrow.png" />
+                <p>ТЭЦ Калининграда</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <img src="img-first/right-arrow.png" />
+              <p>Twitter</p>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-3">
+              <div>
+
+              </div>
+            </div>
+            <div class="col-3">
+              <div>
+
+              </div>
+
+            </div>
+            <div class="col-3">
+              <div>
+
+              </div>
+            </div>
+            <div class="col-3">
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+<!--
+      <div class="footer__links" id="contacts">
         <div class="footer__links1">
           <h3>Контактная информация</h3>
           <img src="img-first/envelope.png" />
@@ -296,8 +518,9 @@
           <p>Twitter</p>
         </div>
       </div>
+       -->
       <hr />
-      <p class="">(с) 2019. Все права защищены.</p>
+      <p class="end">(с) 2019. Все права защищены.</p>
     </footer>
   </body>
 </html>
